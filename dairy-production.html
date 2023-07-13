@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy_Production</title>
+</head>
+<body>
+    <form action="#" method="post" id="register" onsubmit="return handleSubmit()">
+        <span> Avilable Milk : </span><input type="text" name="milk" id="milk" placeholder="Enter Milk Qty in ltr."><span> ltr.</span><br><br>
+        <span> Butter Milk : </span><input type="text" name="b-milk" id="b-milk"><span> 2 ltr/Kg</span><br><br>
+        <span> Curd : </span><input type="text" name="curd" id="curd"><span> 3 ltr/Kg</span><br><br>
+        <span> Paneer : </span><input type="text" name="paneer" id="paneer"><span> 5 ltr/Kg</span><br><br>
+        <span> Chees : </span><input type="text" name="chees" id="chees"><span> 10 ltr/Kg</span><br><br>
+        <input type="submit" onclick="handleData()">
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+            <th>production</th>
+            <th>Used Milk</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Butter milk: </td>
+            <td id="p1-used"></td>
+            <td id="p1-status"></td>
+        </tr>
+        <tr>
+            <td>Curd: </td>
+            <td id="p2-used"></td>
+            <td id="p2-status"></td>
+        </tr>
+        <tr>
+            <td>Paneer: </td>
+            <td id="p3-used"></td>
+            <td id="p3-status"></td>
+        </tr>
+        <tr>
+            <td>Chees: </td>
+            <td id="p4-used"></td>
+            <td id="p4-status"></td>
+        </tr>
+    </table>
+
+    <p id="leftmilk"></p>
+    
+
+
+    <script src="./dairyproduction.js"></script>
+</body>
+</html>
